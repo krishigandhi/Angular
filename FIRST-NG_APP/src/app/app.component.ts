@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TodosComponent } from './MyComponents/todos/todos.component'; 
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { CountryCodePipe } from './pipes/country-code.pipe';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,TodosComponent],
+  imports: [RouterOutlet,UserProfileComponent,CountryCodePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'todo-list'; 
-  // constructor(){ setTimeout(() => {
-  //   this.title = "changed"
-  // }, 3000);}
-
-
+  title = 'FIRST-NG_APP';
 }
